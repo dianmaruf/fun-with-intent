@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.indie.school.funwithintent.HomeActivity">
+
+    <include
+        android:id="@+id/toolbar_container"
+        layout="@layout/layout_toolbar" />
+
+    <TextView
+        android:id="@+id/tv_activity_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Home Activity"
+        android:textAllCaps="true"
+        android:textColor="@color/colorTextLabel"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_call"
+                style="@style/ButtonSmallText"
+                android:layout_margin="@dimen/dimens_padding_2dp"
+                android:layout_weight="1"
+                android:background="@color/colorButtonGreen"
+                android:drawableLeft="@drawable/ic_action_phone_start"
+                android:drawablePadding="@dimen/dimens_padding_10dp"
+                android:drawableStart="@drawable/ic_action_phone_start"
+                android:text="@string/text_phone" />
+
+            <Button
+                android:id="@+id/btn_media"
+                style="@style/ButtonSmallText"
+                android:layout_margin="@dimen/dimens_padding_2dp"
+                android:layout_weight="1"
+                android:background="@color/colorButtonOrange"
+                android:drawableLeft="@drawable/ic_media"
+                android:drawablePadding="@dimen/dimens_padding_10dp"
+                android:drawableStart="@drawable/ic_media"
+                android:text="@string/text_media" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_camera"
+                style="@style/ButtonSmallText"
+                android:layout_margin="@dimen/dimens_padding_2dp"
+                android:layout_weight="1"
+                android:background="@color/colorButtonPurple"
+                android:drawableLeft="@drawable/ic_action_camera"
+                android:drawablePadding="@dimen/dimens_padding_10dp"
+                android:drawableStart="@drawable/ic_action_camera"
+                android:text="@string/text_camera" />
+
+            <Button
+                android:id="@+id/btn_messaging"
+                style="@style/ButtonSmallText"
+                android:layout_margin="@dimen/dimens_padding_2dp"
+                android:layout_weight="1"
+                android:background="@color/colorButtonFlatGreen"
+                android:drawableLeft="@drawable/ic_message"
+                android:drawablePadding="@dimen/dimens_padding_10dp"
+                android:drawableStart="@drawable/ic_message"
+                android:text="@string/text_message" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_next"
+            style="@style/ButtonSmallText"
+            android:layout_margin="@dimen/dimens_padding_2dp"
+            android:layout_weight="1"
+            android:background="@color/colorButtonBlue"
+            android:text="@string/text_next" />
+
+        <Button
+            android:id="@+id/btn_next_stack"
+            style="@style/ButtonSmallText"
+            android:layout_margin="@dimen/dimens_padding_2dp"
+            android:layout_weight="1"
+            android:background="@color/colorBasePrimary"
+            android:text="@string/text_next_stack" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fourth"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.indie.school.funwithintent.FourthActivity">
+
+    <include
+        android:id="@+id/toolbar_container"
+        layout="@layout/layout_toolbar" />
+
+    <TextView
+        android:id="@+id/tv_activity_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="dummy"
+        android:textAllCaps="true"
+        android:textColor="@color/colorTextLabel"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dimens_padding_4dp"
+        android:background="@color/colorButtonRed"
+        android:text="@string/text_home"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>
